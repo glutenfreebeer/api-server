@@ -3,6 +3,7 @@
 const express = require('express')
 const app = express()
 const config = require('./db');
+const mongodb = require('mongodb')
 const client = mongodb.MongoClient;
 
 client.connect(config.DB, function (err, db) {
